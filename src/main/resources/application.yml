@@ -1,0 +1,16 @@
+server:
+  port: 8024
+
+spring:
+  application:
+    name: bootCoin
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/bootcoin
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    hostname: ${COMPUTERNAle: dev
